@@ -1,7 +1,6 @@
 {
   "name": "currency_converter",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -11,5 +10,15 @@
   "license": "ISC",
   "dependencies": {
     "axios": "^0.22.0"
-  }
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dr0er/currency-converter.git"
+  },
+  "bugs": {
+    "url": "https://github.com/dr0er/currency-converter/issues"
+  },
+  "homepage": "https://github.com/dr0er/currency-converter#readme",
+  "description": ""
 }

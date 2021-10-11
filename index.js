@@ -1,10 +1,6 @@
-const axios = require("axios");
-
-// https://fixer.io/
 const FIXER_API_KEY = "51019cbe05761cfe66c1160de4357458";
 const FIXER_API = `http://data.fixer.io/api/latest?access_key=${FIXER_API_KEY}`;
 
-// https://restcountries.eu
 const REST_COUNTRIES_API = `http://api.countrylayer.com/v2/currency`;
 
 const accessKey = `?access_key=3bb1bdf6357847380ad050c07fc9426e`;
@@ -54,5 +50,6 @@ const convertCurrency = async (fromCurrency, toCurrency, amount) => {
 };
 
 convertCurrency("USD", "HRK", 20)
-  .then((result) => console.log(result))
+  // .then((result) => console.log(result))
+  .then((result) => (document.getElementById("one").innerHTML = result))
   .catch((error) => console.log(error));

@@ -5,8 +5,9 @@ const FIXER_API_KEY = "51019cbe05761cfe66c1160de4357458";
 const FIXER_API = `http://data.fixer.io/api/latest?access_key=${FIXER_API_KEY}`;
 
 // https://restcountries.eu
-const REST_COUNTRIES_API = `https://api.countrylayer.com/v2/currency
-? access_key = 3bb1bdf6357847380ad050c07fc9426e`;
+const REST_COUNTRIES_API = `http://api.countrylayer.com/v2/currency`;
+
+const accessKey = `?access_key=3bb1bdf6357847380ad050c07fc9426e`;
 
 const getExchangeRate = async (fromCurrency, toCurrency) => {
   try {
@@ -27,7 +28,9 @@ const getExchangeRate = async (fromCurrency, toCurrency) => {
 
 const getCountries = async (currencyCode) => {
   try {
-    const { data } = await axios.get(`${REST_COUNTRIES_API}/${currencyCode}`);
+    const { data } = await axios.get(
+      `${REST_COUNTRIES_API}/${currencyCode}${accessKey}`
+    );
 
     return data.map(({ name }) => name);
   } catch (error) {

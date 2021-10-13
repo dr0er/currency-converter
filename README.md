@@ -1,7 +1,8 @@
-# currency-converter
+## 👨‍💻 `Run npm i axios`
 
-## `Run npm i axios`
+## 🔊 `Project name:` currency-converter
 
-### This node.js script allows you to convert any currency to another, using 3-letter currency code.
+## 🔧 `Used technologies:` JacaScript, HTML, CSS
 
-### Used APIs: `http://data.fixer.io/` && `http://api.countrylayer.com/v2/currency`
+## 👀 `Brief overview:` Node.js script that allow you to convert one currency to another, using 3-letter currency code.
+### 📩 Used APIs: `http://data.fixer.io/` && `http://api.countrylayer.com/v2/currency`
